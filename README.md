@@ -1,8 +1,8 @@
 # CRUD Bear (array storage)
 
 Demo Restful API with NodeJS and Angular HTTP / Resource controller 
-
-![](http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/512/Bear-icon.png =250x)
+ 
+<img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/512/Bear-icon.png" alt="Bear Restful Example" style="width: 200px;"/>
 
 * restfulBearAPI (Manipulate FormUrlEncoded) 
 * restfulBearJSON (Manipulate JSON with bear*.html)
