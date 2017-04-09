@@ -61,6 +61,6 @@ app.use("*",function(req,res){
  // res.sendFile(__dirname + "/public/404.html");
 });
 
-app.listen(8000, function() {
+app.listen(80, function() {
 	console.log("Server is running")
 });

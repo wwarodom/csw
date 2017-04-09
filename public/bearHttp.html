@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+  <head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restful Bear</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+  </head>
 
 <body > 
-  <div ng-app="bearApp" ng-controller="BearCtrl">
-    <h2>Bear Restful:</h2>
+  <div ng-app="bearApp" ng-controller="BearCtrl" class="container">
+    <h2>Restful Bear:</h2>
     <b> Result: </b> <font color="red">{{result}} </font>
     <ul>
         <li ng-repeat="bear in bears track by $index">         
               {{ bear }}                     
-            <button type="submit" ng-click="get(bear.id)"> Get </button> 
+            <button type="submit" ng-click="get(bear.id)" class="btn btn-secondary"> Get </button> 
         </li>
     </ul>
 
@@ -21,6 +30,7 @@
     <input type="number" id="weight" ng-model="addBear.weight"> <br>    
     <button ng-click="add()">Add</button> <br>
    
+     <br>  <a href="/">Home</a>
   </div>
 
   <script type="text/javascript"> 

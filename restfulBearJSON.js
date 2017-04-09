@@ -5,7 +5,8 @@ var bodyParser = require('body-parser')
 // var urlencodedParser = bodyParser.urlencoded({ extended: false }); 
 
 var bears = [{'id':0,'name':'pooh','weight': 211}, 
-			 {'id':1, 'name':'vinnie','weight': 111}]
+			 {'id':1, 'name':'vinnie','weight': 111} 
+			 ]
 var bearIndex=2;
 
 app.use(express.static('public'))
@@ -58,6 +59,6 @@ app.use("*",function(req,res){
  // res.sendFile(__dirname + "/public/404.html");
 });
 
-app.listen(8000, function() {
+app.listen(80, function() {
 	console.log("Server is running")
 });
