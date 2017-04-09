@@ -2,7 +2,7 @@
 
 Demo Restful API with NodeJS and Angular HTTP / Resource controller 
 
-![alt text](http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/512/Bear-icon.png =250x	"Bear Restful")
+![](http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/512/Bear-icon.png =250x)
 
 * restfulBearAPI (Manipulate FormUrlEncoded) 
 * restfulBearJSON (Manipulate JSON with bear*.html)
