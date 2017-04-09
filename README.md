@@ -14,9 +14,8 @@ All 2 files are the same except restfulBearAPI is for API testing with PostMan a
 * /public/bearResource.html (Anugular Resource controller)
 
 # Installation
-git clone https://github.com/wwarodom/csw.git
-
 ```bash
+$ git clone https://github.com/wwarodom/csw.git 
 $ cd csw  
 $ npm init  
 $ npm install express body-parser --save  
