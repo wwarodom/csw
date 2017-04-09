@@ -16,10 +16,13 @@ All 2 files are the same except restfulBearAPI is for API testing with PostMan a
 # Installation
 git clone https://github.com/wwarodom/csw.git
 
-cd csw  
-npm init  
-npm install express body-parser --save  
-node restfulBearJSON.js
+```bash
+$ cd csw  
+$ npm init  
+$ npm install express body-parser --save  
+$ node restfulBearJSON.js 
+```
+
 
 
 ### Open Web Browser:
