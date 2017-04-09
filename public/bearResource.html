@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,16 +104,20 @@
         $scope.result = 'Bear '+ id +' is deleted'
         $scope.bears = Bear.query(); 
       }
-        
+
       $scope.add = function(){ 
-        if( $scope.addBear.name != '' ) {
-          Bear.save( {name: $scope.addBear.name, weight: $scope.addBear.weight})        
-          $scope.bears = Bear.query();  
-        }
-        else {
-          $scope.result = 'Please enter a new bear information'
-        }
+        Bear.save( {name: $scope.addBear.name, weight: $scope.addBear.weight})        
+        $scope.bears = Bear.query(); 
       }; 
+
+      // ==== add method: From slide =====
+      // $scope.add = function(){ 
+      //   var givenBear = new Bear($scope.addBear); 
+      //   givenBear.$save(function(data){ 
+      //     console.log(data.message); 
+      //     $scope.bears = Bear.query(); 
+      //   }); 
+      // }; 
 
       // ======  $http version (without $resource) =========
       // $http.get("/api/bears")
@@ -144,7 +147,6 @@
       // } 
 
       // ======= function for front-end display with Angular ====
-
       $scope.isEmpty = function(obj) {
           return Object.keys(obj).length == 0;
       }
